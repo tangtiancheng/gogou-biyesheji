@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TCDistrictViewController">
+            <connections>
+                <outlet property="regionTableView" destination="IoB-nO-qFJ" id="DrV-LF-JvU"/>
+                <outlet property="selectCityLabel" destination="tj1-gM-VKn" id="kXe-yX-WOb"/>
+                <outlet property="selectedCityBtn" destination="qlE-U7-d8J" id="r20-lx-TjF"/>
+                <outlet property="subRegionTableView" destination="oM5-98-0OJ" id="KlG-tv-qnh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlE-U7-d8J">
+                    <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fkX-3z-pS8"/>
+                    </constraints>
+                    <state key="normal" title="切换城市" image="btn_changeCity">
+                        <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="selectCityClick:" destination="-1" eventType="touchUpInside" id="yZ2-GY-HvK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tj1-gM-VKn">
+                    <rect key="frame" x="117" y="0.0" width="100" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="mBX-M4-rPF"/>
+                        <constraint firstAttribute="width" constant="100" id="oou-jm-tpE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.1627030112" blue="0.1595056936" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IoB-nO-qFJ">
+                    <rect key="frame" x="0.0" y="30" width="167" height="470"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hcA-3m-XjB"/>
+                        <outlet property="delegate" destination="-1" id="arc-GQ-kBO"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oM5-98-0OJ">
+                    <rect key="frame" x="167" y="30" width="167" height="470"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zlC-5t-ogC"/>
+                        <outlet property="delegate" destination="-1" id="OPf-o4-isz"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qlE-U7-d8J" secondAttribute="trailing" id="34x-gF-bFD"/>
+                <constraint firstItem="oM5-98-0OJ" firstAttribute="leading" secondItem="IoB-nO-qFJ" secondAttribute="trailing" id="5St-tu-5gs"/>
+                <constraint firstAttribute="bottom" secondItem="IoB-nO-qFJ" secondAttribute="bottom" id="GVs-VG-mwn"/>
+                <constraint firstItem="oM5-98-0OJ" firstAttribute="width" secondItem="IoB-nO-qFJ" secondAttribute="width" id="HUM-sk-8RN"/>
+                <constraint firstItem="tj1-gM-VKn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Irf-3W-BI7"/>
+                <constraint firstItem="IoB-nO-qFJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OxC-ek-xkM"/>
+                <constraint firstAttribute="trailing" secondItem="oM5-98-0OJ" secondAttribute="trailing" id="Q3T-FS-lur"/>
+                <constraint firstAttribute="bottom" secondItem="oM5-98-0OJ" secondAttribute="bottom" id="V46-hp-Zzr"/>
+                <constraint firstItem="oM5-98-0OJ" firstAttribute="top" secondItem="qlE-U7-d8J" secondAttribute="bottom" id="dFh-bt-P4b"/>
+                <constraint firstItem="qlE-U7-d8J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dlO-Fa-0Ta"/>
+                <constraint firstItem="IoB-nO-qFJ" firstAttribute="top" secondItem="qlE-U7-d8J" secondAttribute="bottom" id="fYb-5a-jFT"/>
+                <constraint firstItem="tj1-gM-VKn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gOw-uv-UPp"/>
+                <constraint firstItem="qlE-U7-d8J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uSS-jl-pmY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="488" y="194"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_changeCity" width="30" height="30"/>
+    </resources>
+</document>

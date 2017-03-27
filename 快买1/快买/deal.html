@@ -1,0 +1,293 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+            <meta charset="utf-8">
+                <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+                    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                        <meta name="format-detection" content="telephone=no">
+                            <meta name="format-detection" content="email=no">
+                                <meta name="apple-mobile-web-app-capable" content="yes">
+                                    <meta name="apple-mobile-web-app-title" content="点评团购触屏版 -北京团购-大众点评团北京站">
+                                        <meta name="apple-itunes-app" content="app-id=351091731">
+                                            <link rel="apple-touch-startup-image" size="640x920" href="//www.dpfile.com/m/img/app/tuangou/startup4.8edce79bb20fe844f45c989336e5935e.png" media="(device-height:480px)">
+                                                <link rel="apple-touch-startup-image" href="//www.dpfile.com/m/img/app/tuangou/startup5.100ee1ca3bfbcf9c295ce8cc91659f60.png" media="(device-height:568px)">
+                                                    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//www.dpfile.com/m/img/app/tuangou/apple-touch-icon-57x57.b65964186a2866605deb078a5e8d31be.png">
+                                                        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//www.dpfile.com/m/img/app/tuangou/apple-touch-icon-72x72.6956ac9c5c482a13efe1b6bd06e717b6.png">
+                                                            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//www.dpfile.com/m/img/app/tuangou/apple-touch-icon-114x114.5e782d534b6f7c3f7d928832f0f83613.png">
+                                                                <title>团购详情-大众点评团北京站</title>
+                                                                <script>var G_rtop=+new Date,_gaq=[
+                                                                                                   ['_setAccount','UA-16496742-2'],
+                                                                                                   ['_addOrganic','soso','w'],
+                                                                                                   ['_addOrganic','sogou','query'],
+                                                                                                   ['_addOrganic','yodao','q'],
+                                                                                                   ['_addOrganic','bing','q'],
+                                                                                                   ['_addOrganic','360','q'],
+                                                                                                   ['_addOrganic','gougou','search'],
+                                                                                                   ['_setDomainName', 'http://m.dianping.com'],
+                                                                                                   ['_setAllowHash', false]]
+                                                                                                   dpga=function(key){_gaq.push(['_trackPageview', key||''])},
+                                                                                                   pageTracker={_trackPageview:dpga},_hip=[
+                                                                                                                                           ['_setPageId', 171020],
+                                                                                                                                           ['_setCityId', 2],
+                                                                                                                                           ['_setPVInitData', '']
+                                                                                                                                           ];
+                                                                    </script>
+                                                                
+                                                                
+                                                                <script>
+                                                                    //for weixin share
+                                                                    function weixinShare(type){
+                                                                        var appid = 'wx841a97238d9e17b2';
+                                                                        var img_url = "http://m1.s1.dpfile.com/sc/2014/mobile_pay5/dp_icon_100.png";
+                                                                        var link = window.location.href;
+                                                                        var desc = '团购详情-大众点评团北京站';
+                                                                        var title = '大众点评团';
+                                                                        var shareFriend = function () {
+                                                                            WeixinJSBridge.invoke('sendAppMessage',{
+                                                                                                  "appid":appid,
+                                                                                                  "img_url":img_url,
+                                                                                                  "img_width":"640",
+                                                                                                  "img_height":"640",
+                                                                                                  "link":link,
+                                                                                                  "desc":desc,
+                                                                                                  "title":title
+                                                                                                  },function(res) {
+                                                                                                  _report('send_msg', res.err_msg);
+                                                                                                  })
+                                                                        }
+                                                                        var shareTimeline = function () {
+                                                                            WeixinJSBridge.invoke('shareTimeline',{
+                                                                                                  "appid":appid,
+                                                                                                  "img_url":img_url,
+                                                                                                  "img_width":"640",
+                                                                                                  "img_height":"640",
+                                                                                                  "link":link,
+                                                                                                  "desc":desc,
+                                                                                                  "title":title
+                                                                                                  },function(res) {
+                                                                                                  _report('timeline', res.err_msg);
+                                                                                                  });
+                                                                        }
+                                                                        if(type == 'friend'){
+                                                                            return shareFriend;
+                                                                        }else if(type == 'timeline'){
+                                                                            return shareTimeline;
+                                                                        }
+                                                                    }
+                                                                
+                                                                var shareFriend = weixinShare('friend');
+                                                                var shareTimeline = weixinShare('timeline');
+                                                                document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+                                                                                          WeixinJSBridge.on('menu:share:appmessage', function(argv){
+                                                                                                            shareFriend();
+                                                                                                            });
+                                                                                          WeixinJSBridge.on('menu:share:timeline', function(argv){
+                                                                                                            shareTimeline();
+                                                                                                            });
+                                                                                          WeixinJSBridge.invoke("getInstallState",{
+                                                                                                                "packageUrl": "dianping://home",
+                                                                                                                "packageName": "com.dianping.v1"
+                                                                                                                },function(res){
+                                                                                                                });
+                                                                                          }, false);
+                                                                    </script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="http://m1.s2.dpfile.com/concat/~mod~r-tuan-detail-description~0.2.10~css~index.css,~mod~fun-base-theme~0.1.3~css~style.css,~mod~easy-login~0.2.9~css~style.css,~mod~mobile-common-search~0.4.3~css~style.css,~mod~mobile-download-banner~0.1.13~css~style.css,~mod~ktv-structure-static~0.1.11~css~style.css,~mod~app-m-tuangou~1.3.22~css~style.css" type="text/css">
+        <header>
+            <a class="back back-gray" href="javascript:history.go(-1)">返回</a>
+            <div class="info">图文详情</div>
+        </header>
+        <div class="cost-box">
+            <div class="buy-box">
+                <div class="price">¥</div>
+                <div class="price sum">15.9</div>
+                <div class="past Fix">
+                    <div class="t">
+                        <span class="o-price">¥20</span>
+                    </div>
+                </div>
+                
+                
+                <div class="last">
+                    <a onclick="_hip.push(['mv', {module: '5_button_buy', action:'click', type:'up', dealgrp_id:'14359090'}]);" href="/login?redir=/tuan/buy/14464686" class="buy-btn ">
+                        
+                        立即购买
+                    </a>
+                </div>
+            </div>	</div>
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">团购详情<i class="icon-comm detail"></i></h3><div class="detail-tit"></div>
+                        <table width="100%" cellpadding="0" cellspacing="0" class="detail-table">
+                            <thead>
+                                <tr>
+                                    <th width="50%">名称</th>
+                                    <th width="25%">数量</th>
+                                    <th width="25%">单价</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>佳晶杂粮薏仁黑龙江特产</td>
+                                    <td class="tc">1袋</td>
+                                    <td class="tc">20元</td>
+                                </tr>
+                                <tr class="total">
+                                    <td></td>
+                                    <td class="tc">总价值<br><strong>团购价</strong></td>
+                                    <td class="tc">20元<br><strong>15.9元</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div><p>全国多省包邮（含:上海,江苏,浙江,安徽,江西,北京,天津,山西,山东,河北,湖南,湖北,河南,广东,福建,辽宁,吉林,黑龙江,陕西）</p><p>厂家联系方式：4006977789；0451-82427730<br>储藏方法：放置阴凉，通风，干燥处<br>保质期：365天<br>包装方式：包装<br>品牌：佳晶<br>规格：375g<br>等级：一级<br>产地：中国大陆<br>省份：黑龙江省<br>城市：哈尔滨市</p></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-info buy-know">
+            <div class="con">
+                <div class="detail-box"><h3 class="tit">购买须知<i class="icon-comm buy"></i></h3><div class="detail-box">
+                    <div class="purchase-notes">
+                        <dl>
+                            <dt>配送范围</dt>
+                            <dd>
+                                <p class="listitem">全国可配送，内蒙古，广西，甘肃，宁夏，青海，重庆，云南，贵州，四川，新疆，西藏，海南，港澳台除外</p>
+                                <p class="listitem">偏远地区购买前请详询商家客服</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>购买方式</dt>
+                            <dd>
+                                <p class="listitem">请您进入购买页面，填入收货信息（请填写正确，保证快递准确送货），由商家负责配送，免快递费</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>发货时间</dt>
+                            <dd>
+                                <p class="listitem">完成支付后2-3个工作日内发货</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>物流时间</dt>
+                            <dd>
+                                <p class="listitem">发货后3-5天左右到货</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>发货状态</dt>
+                            <dd>
+                                <p class="listitem">会员可在“我的订单”-“订单详情”中查看物流快递号及发货状态（物流信息更新可能有延迟，购买成功一周左右方可查看）</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>商户信息</dt>
+                            <dd>
+                                <p class="listitem">商户QQ：317000880，服务时间：9：00-24：00</p>
+                                <p class="listitem">商户手机：400-697-7789，服务时间9：00-24：00</p>
+                                <p class="listitem">商户电话：0451-82427730，服务时间：9：00-24：00</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>温馨提示</dt>
+                            <dd>
+                                <p class="listitem">如需团购券发票，请在下订单时备注说明</p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+                <div class="info Fix">
+                    <div class="detail-box"><h3 class="tit">产品介绍</h3><p class="listitem"></p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/3080358e24daecfd2dc80f3776b5fa51(640x1024)/thumb.jpg"></div>
+                        <p class="listitem"></p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s1.dpfile.com/pc/mc/508fd141f12d7166c8d05cafdb8bf62d(640x1024)/thumb.jpg"></div>
+                        <p class="listitem"></p>
+                        <p class="explain"></p>
+                        <div class="img"><img src="http://t1.s2.dpfile.com/pc/mc/2a5b3badf1e7dbdfd9117a87e35fe35b(640x1024)/thumb.jpg"></div>
+                        
+                    </div><div class="detail-box"><h3 class="tit">售后保障</h3><div>消费者在签收商品后 7 天内，可提出退换货申请，退换的商品必须不影响商家的二次销售</div>
+                        <div>
+                            <b>退换货流程：</b><br>
+                            <b>第一步：</b>请您先联系商家确认是否符合退换货条件<br>
+                            商家联系方式:  400-697-7789<br>
+                            <b>第二步：</b>在“我的订单”页面，点击“申请售后”，按页面提示步骤操作即可<br>
+                            <b>第三步：</b>寄回商品并务必保留快递底单（寄回地址在系统中会展示给您），邮费需先垫付<br>
+                            为了保证您的退/换货办理顺利，请您务必将以下信息随包裹一同附上<br>
+                            您的订单号<br>
+                            您的联系方式<br>
+                            支付宝账户或网银账户<br>
+                            退/换货原因<br>
+                            <b>第四步：</b>商家在收到商品的 2 个工作日内，对商品进行检查确认，确认无误后通过售后系统处理退款<br>
+                        </div>
+                        <div>
+                            <b>退换货费用说明：</b><br>
+                            如果是商品质量问题或发错情况，因此而产生的邮费将由商家承担（邮费在  <b>7 - 20</b> 元，不接受到付件）
+                        </div>
+                        <div>
+                            <b>不可退换货特殊说明：</b><br>
+                            - 外包装已拆无法复原，影响二次销售（质量问题除外）<br>
+                            - 消费者定做的、鲜活易腐的<br>
+                            - 人为刻意损害或不可抗力导致的损坏<br>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="detail-info group-detail">
+            <div class="con">
+            </div>
+        </div>
+        
+        <a onclick="_hip.push(['mv', {module: '5_button_buy', action:'click', type:'down', dealgrp_id:'14359090'}]);" href="/login?redir=/tuan/buy/14464686" class="buy-now ">
+            <span>¥15.9</span>
+            
+            <span>立即购买</span>
+        </a>
+        
+        <script type="text/javascript">_gaq.push(['_trackPageview', 'dealdetail/北京']);</script>
+        
+        <script>!function(n){"use strict";function t(n,t){for(var r in t)n[r]||(n[r]=t[r])}function r(n,r){t(n.prototype,r)}function i(n){var t=n.match(V),r=t[1],i=t[2]||"*",o=t[3]||"";return e({n:r,v:i,p:o})}function e(n){var t=n.n+"@"+n.v;return n.id=t+n.p,n.k=t,n}function o(n,t){return t.map?n:n+".js"}function a(n,t){for(var r in t)n[r]=t[r]}function f(n){var t=n.match(W);return t?t[0]:n}function u(n,t){return h(f(t.p).slice(1),n)}function c(n,t){return n=u(n,t),n?t.k+"/"+n:t.k}function h(n,t){var r=(n+"/"+t).split("/").filter(Boolean);return s(r).join("/")}function s(n){for(var t=0,r=n.length-1;r>=0;r--){var i=n[r];"."===i?n.splice(r,1):".."===i?(n.splice(r,1),t++):t&&(n.splice(r,1),t--)}for(;t--;)n.unshift("..");return n}function l(n){return 0===n.indexOf("./")||0===n.indexOf("../")}function p(n){throw new Error("neuron: "+n)}function v(n){p("Cannot find module '"+n+"'")}function d(n){return X[n]||(X[n]=[])}function g(n,t){d(n).push(t)}function m(n,t){var r=d(n);r.forEach(function(n){n(t)})}function y(n,t){n||p("null id"),t||(t={});var r=t.map||{};n=r[n]||n;var a,f=l(n);if(f?(t.id||v(n),n=c(n,t),n=o(n,t),a=i(n)):(n=t.m&&t.m[n]||n,a=i(n)),a.k===t.k)a.graph=t.graph;else{var u=k(a.k,t.graph)||[];a.graph=u,a.v=u[0]||a.v,e(a)}return a}function k(n,t){var r=it.graph._,i=t?t[1]:r;return i&&n in i?it.graph[i[n]]:r}function w(n){return n.loaded?n.exports:O(n)}function O(n){n.loaded=!0;var t=n.exports={},r=A(n.id),i=f(r),e=n.factory;return e(R(n),t,n,r,i),n.exports}function b(n,t,r){var i=y(n,t),e=i.graph,o=E(i),a=o.main?i.k:i.id,f=e[a];return f||(!r||v(n),f=e[a]=j(o),f.graph=e,f.g||(f.g=Y++)),f}function x(n,t){J.ready(n,function(){t(w(n))})}function E(n){var t=n.id;return ot[t]||(ot[t]={n:n.n,v:n.v,p:n.p,id:t,k:n.k,m:{},l:[],main:!n.p})}function j(n){function t(){this.r=[]}return t.prototype=n,new t}function S(n){!~n.indexOf("@")||p("id with '@' is prohibited")}function R(n){var t=function(t){S(t);var r=b(t,n,!0);return w(r)};return t.async=function(t,r){var i=t;if(r){S(t);var e=l(t);if(e){t=c(t,n);var a=n.entries;t=a?$(t,a)||$(t+".js",a)||$(t+".json",a)||v(i):o(t,n)}var f=b(t,n);if(!f.main){if(!e)return;f.a=!0}x(f,r)}},t.resolve=function(t){if(l(t)&&(t=u(t,n),!~t.indexOf("../"))){var r=T(n.k,t);return t=N(t,r),A(n.k+"/"+t)}},t}function $(n,t){return~t.indexOf(n)?n:Q}function _(n){var t=Z.createElement("script");t.src=n,t.async=!0,tt(t,function(){nt.removeChild(t)}),setTimeout(function(){nt.insertBefore(t,nt.firstChild)},0)}function L(n,t,r,i){i||(i={});var f=y(n);f.p&&(f.p=o(f.p,i),e(f));var u,c=f.k;i.main&&(u=ot[c]);var h=ot[f.id]=u||ot[f.id]||E(f);if(i.main&&(ot[c]=h,a(h,f)),a(h,i),!h.factory){h.factory=r,h.deps=t,M(t,h.m);var s=i.asyncDeps;s&&M(s,h.m),B(h,"l")}}function M(n,t){n.forEach(function(n){var r=n.split("@")[0];t[r]=n})}function B(n,t){var r,i=n[t];for(n[t]=Q;r=i.pop();)r()}function C(n,t){var r=ot[n.id];r.f=n.f,r.a=n.a;var i=r.l;i&&(i.push(t),i.length<2&&I(r))}function I(n){if(!n.d){n.d=!0;var t=n.f,r=n.a,i=n.k;if(~rt.indexOf(i)){if(!t&&!r)return}else rt.push(i);var e=it.loaded,o=t?n.id:i;if(~e.indexOf(o)){if(!r)return}else e.push(o);_(P(n))}}function N(n,t){var r=n.match(/\.[\w\d]+$/)[0];return t?n.replace(new RegExp(r+"$"),"_"+t+r):n}function P(n){var t=T(n.k,n.main?n.n+".js":n.p.slice(1)),r=n.main?n.k+"/"+n.n+".js":n.id,i=A(r);return N(i,t)}function T(n,t){return it.hash&&it.hash[n]&&it.hash[n][t]}function A(n){var t=n.replace("@","/"),r=it.path;return r||p("config.path must be specified"),r=r.replace("{n}",t.length%3+1),r+t}function D(n,t,r){if(m("beforeready",z(n)+":"+n.g),!n.factory)return m("beforeload",n.id),C(n,function(){m("load",z(n)),D(n,t,r)});var i=n.deps,e=i.length,o=n.r;if(!e||!o)return n.r=Q,q(n),t();if(o.push(t),!(o.length>1)){var a=function(){--e||(r.length=0,r=K,q(n),B(n,"r"))};r=r?[n].concat(r):[n],i.forEach(function(t){var i=b(t,n);return~r.indexOf(i)?a():void D(i,a,r)})}}function q(n){m("ready",z(n)+":"+n.g)}function z(n){return n.main?n.k:n.id}function F(n){return n}function G(n){var t,r;for(t in n)r=et[t],r&&(it[t]=r(n[t]))}function H(n,t){var r=b(n);r.f=!0,x(r,t)}var J={version:"7.2.0"},K=null,Q=!1;J.ready=function(n,t){t()};var U=TypeError;r(Array,{indexOf:function(n,t){var r=this.length>>>0;for(t=Number(t)||0,t=Math[0>t?"ceil":"floor"](t),0>t&&(t=Math.max(t+r,0));r>t;t++)if(t in this&&this[t]===n)return t;return-1},lastIndexOf:function(n,t){var r=this.length>>>0;for(t=Number(t)||r-1,t=Math[0>t?"ceil":"floor"](t),0>t&&(t+=r),t=Math.min(t,r-1);t>=0;t--)if(t in this&&this[t]===n)return t;return-1},filter:function(n,t){for(var r=[],i=0,e=this.length;e>i;i++)i in this&&n.call(t,this[i],i,this)&&r.push(this[i]);return r},forEach:function(n,t){for(var r=0,i=this.length;i>r;r++)r in this&&n.call(t,this[r],r,this)},every:function(n,t){for(var r=0,i=this.length;i>r;r++)if(r in this&&!n.call(t,this[r],r,this))return!1;return!0},map:function(n,t){for(var r=[],i=0,e=this.length;e>i;i++)i in this&&(r[i]=n.call(t,this[i],i,this));return r},some:function(n,t){for(var r=0,i=this.length;i>r;r++)if(r in this&&n.call(t,this[r],r,this))return!0;return!1},reduce:function(n){if("function"!=typeof n)throw new U(n+" is not an function");var t,r=this,i=r.length>>>0,e=0;if(arguments.length>1)t=arguments[1];else for(;;){if(e in r){t=r[e++];break}if(++e>=i)throw new U("Reduce of empty array with on initial value")}for(;i>e;e++)e in r&&(t=n.call(K,t,r[e],e,r));return t},reduceRight:function(n){if("function"!=typeof n)throw new U(n+" is not an function");var t,r=this,i=r.length>>>0,e=i-1;if(arguments.length>1)t=arguments[1];else for(;;){if(e in r){t=r[e--];break}if(--e<0)throw new U("Reduce of empty array with on initial value")}for(;e>=0;e--)e in r&&(t=n.call(K,t,r[e],e,r));return t}}),t(Object,{keys:function(){var n=Object.prototype.hasOwnProperty,t=!{toString:""}.propertyIsEnumerable("toString"),r=["toString","toLocaleString","valueOf","hasOwnProperty","isPrototypeOf","propertyIsEnumerable","constructor"],i=r.length;return function(e){if(e!==Object(e))throw new U("Object.keys called on non-object");var o,a=[];for(o in e)n.call(e,o)&&a.push(o);if(t)for(var f=0;i>f;f++)n.call(e,r[f])&&a.push(r[f]);return a}}()}),r(String,{trimLeft:function(){return this.replace(/^\s+/,"")},trimRight:function(){return this.replace(/\s+$/,"")},trim:function(){return this.trimLeft().trimRight()}});var V=/^((?:[^\/])+?)(?:@([^\/]+))?(\/.*)?$/,W=/.*(?=\/.*$)/,X={};J.on=g;var Y=1,Z=document,nt=Z.getElementsByTagName("head")[0],tt=Z.createElement("script").readyState?function(n,t){n.onreadystatechange=function(){var r=n.readyState;("loaded"===r||"complete"===r)&&(n.onreadystatechange=K,t.call(this))}}:function(n,t){n.addEventListener("load",t,!1)},rt=[];J.ready=D;var it=J.conf={loaded:[],graph:{_:{}}},et={path:function(n){return n.replace(/\/*$/,"/")},hash:F,loaded:F,graph:F};J.config=G,n.neuron=J,n.define=L,n.facade=function(n){H(n.entry,function(t){t.init&&t.init(n.data)})},n._use=function(n,t){H(n,t)},n._load=_;var ot=J.mods={}}(this);</script><script>neuron.config({path: "http://m1.s2.dpfile.com/mod", loaded:["app-m-tuangou@1.3.22/js/page/detail.js","wepp-module-event@0.2.1","load-event@0.1.0","env@0.1.1","iscroll@5.0.11","logger@0.1.9","model-data@0.1.10","react@0.14.1","cookie@0.1.2","xss@0.1.0","openapp@0.1.10","underscore@1.5.3","mobile-common-nav@1.1.0","r-tuan-detail-description@0.2.10","fun-base-theme@0.1.3","tpl@0.2.1","mobile-common@0.1.27","easy-login@0.2.9","huatuo@1.0.4","mobile-common-search@0.4.3","util-m-swipe@0.2.5","base-m-lazyload@3.1.5","mobile-download-banner@0.1.13","wepp-module-toast@0.1.5","ktv-structure-static@0.1.11"], graph:{"0":["1.3.22",{"r-tuan-detail-description@~0.2.0":1,"util-m-swipe@~0.2.5":7,"tpl@~0.2.1":8,"mobile-download-banner@~0.1.0":9,"fun-base-theme@~0.1.3":13,"wepp-module-toast@~0.1.0":14,"mobile-common@~0.1.0":17,"underscore@~1.5.0":18,"cookie@~0.1.0":12,"openapp@~0.1.3":10,"ktv-structure-static@~0.1.11":19,"mobile-common-search@~0.4.3":20,"mobile-common-nav@~1.1.0":22,"huatuo@^1.0.3":24,"logger@~0.1.8":3,"env@~0.1.1":4,"base-m-lazyload@^3.1.4":25,"zepto-wepp@~1.1.0":11,"easy-login@~0.2.3":26}],"1":["0.2.10",{"model-data@~0.1.9":2,"logger@~0.1.8":3,"react@~0.14.1":6,"env@~0.1.1":4}],"2":["0.1.10"],"3":["0.1.9",{"env@~0.1.0":4,"load-event@~0.1.0":5}],"4":["0.1.1"],"5":["0.1.0"],"6":["0.14.1"],"7":["0.2.5"],"8":["0.2.1"],"9":["0.1.13",{"openapp@~0.1.1":10,"zepto-wepp@~1.1.4":11,"cookie@~0.1.2":12}],"10":["0.1.10"],"11":["1.1.6"],"12":["0.1.2"],"13":["0.1.3"],"14":["0.1.5",{"wepp-module-overlay@~0.2.0":15,"zepto-wepp@~1.1.0":11}],"15":["0.2.2",{"wepp-module-event@~0.2.0":16,"zepto-wepp@~1.1.0":11}],"16":["0.2.1"],"17":["0.1.27",{"cookie@~0.1.0":12,"zepto-wepp@~1.1.0":11}],"18":["1.5.3"],"19":["0.1.11",{"underscore@^1.5.3":18,"zepto-wepp@^1.1.6":11}],"20":["0.4.3",{"xss@~0.1.0":21,"zepto-wepp@~1.1.4":11}],"21":["0.1.0"],"22":["1.1.0",{"wepp-module-overlay@~0.2.0":15,"zepto-wepp@~1.1.4":11,"iscroll@~5.0.10":23}],"23":["5.0.11"],"24":["1.0.4",{"env@~0.1.1":4,"logger@~0.1.6":3}],"25":["3.1.5"],"26":["0.2.9"],"_":{"app-m-tuangou@*":0}}})</script>
+        <script async="" src="http://m1.s2.dpfile.com/concat/~mod~app-m-tuangou~1.3.22~js~page~detail.js,~mod~wepp-module-event~0.2.1~wepp-module-event.js,~mod~load-event~0.1.0~load-event.js,~mod~env~0.1.1~env.js,~mod~iscroll~5.0.11~iscroll.js,~mod~logger~0.1.9~logger.js,~mod~model-data~0.1.10~model-data.js,~mod~react~0.14.1~react.js,~mod~cookie~0.1.2~cookie.js,~mod~xss~0.1.0~xss.js,~mod~openapp~0.1.10~openapp.js,~mod~underscore~1.5.3~underscore.js,~mod~mobile-common-nav~1.1.0~mobile-common-nav.js,~mod~r-tuan-detail-description~0.2.10~r-tuan-detail-description.js,~mod~fun-base-theme~0.1.3~fun-base-theme.js,~mod~tpl~0.2.1~tpl.js,~mod~mobile-common~0.1.27~mobile-common.js,~mod~easy-login~0.2.9~easy-login.js,~mod~huatuo~1.0.4~huatuo.js,~mod~mobile-common-search~0.4.3~mobile-common-search.js,~mod~util-m-swipe~0.2.5~util-m-swipe.js,~mod~base-m-lazyload~3.1.5~base-m-lazyload.js,~mod~mobile-download-banner~0.1.13~mobile-download-banner.js,~mod~wepp-module-toast~0.1.5~wepp-module-toast.js,~mod~ktv-structure-static~0.1.11~ktv-structure-static.js"></script>
+        <script>
+            facade({entry:"app-m-tuangou/js/page/detail.js"});
+            </script>
+        <footer class="footer">
+            <a href="/tuan">首页</a><em>|</em>
+            <a href="/tuan/receiptlist">我的点评团</a><em>|</em>
+            <a href="http://www.dianping.com/events/m/index.htm">客户端</a><em>|</em>
+            <br>
+            <a href="http://t.dianping.com">电脑版</a><em>|</em>
+            <a href="http://m.dianping.com">大众点评网</a><em>|</em>
+            <a href="http://m.dianping.com/feedback">意见反馈</a>
+            <br>
+            <p class="copyright">copyright 2014 dianping.com</p>
+            <iframe id="J_shop_frameMobile" frameborder="0" src="" style="display:none"></iframe>
+        </footer>
+        <script type="text/javascript" src="//www.dpfile.com/hls/hippo2.min.376e5aee201f773050a4842e4fd097c4.js"></script>
+        
+        <script>
+            try{
+                window.onload =function(){
+                    document.body.scrollTop = 1;
+                }
+            }catch(e){
+                
+            }
+        </script>
+</body></html>

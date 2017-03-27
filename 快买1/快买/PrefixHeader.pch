@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  快买
+//
+//  Created by 唐天成 on 15/12/28.
+//  Copyright © 2015年 唐天成. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "CategoryTC.h"
+
+#ifdef DEBUG
+#define MTLog(...) NSLog(__VA_ARGS__)
+#else
+#define MTLog(...)
+#endif
+
+#define TCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define TCGlobalBg TCColor(230, 230, 230)
+
+//选择分类
+#define TCCategoryDidChangeNotification @"TCCategoryDidChangeNotification"
+#define TCSelectCategoryName @"TCSelectCategoryName"
+#define TCSelectSubCategoryName @"TCSelectSubCategoryName"
+
+
+//选择城市
+#define TCCityDidChangeNotification @"TCCityDidChangeNotification"
+#define TCSelectCityName @"TCSelectCityName"
+//选择区域
+#define TCRegionDidChangeNotification  @"TCRegionDidChangeNotification"
+#define TCSelectRegionName  @"TCSelectRegionName"
+#define TCSelectSubregionName  @"TCSelectSubregionName"
+
+
+//选择排序方式
+#define TCSortDidChangeNotification @"TCSortDidChangeNotification"
+#define TCSelectSort @"TCSelectSort"
+
+//点击收藏按钮
+#define TCCollectStateDidChangeNotification @"TCCollectStateDidChangeNotification"
+#define TCIsCollectKey @"TCIsCollectKey"
+#define TCCollectDealKey @"TCCollectDealKey"
+
+#endif /* PrefixHeader_pch */
